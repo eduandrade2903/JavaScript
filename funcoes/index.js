@@ -1,9 +1,22 @@
 //declaração de uma função
 
-function isValidad () { 
+/*function isValidad () { 
     const soma = 1 + 2;
 
-    return soma;
+    if(soma === 3 ){ 
+        return true;
+    }
+    return false;
 }
 
-console.log(isValidad());
+console.log(isValidad());*/
+// functions expressions 
+/*const isValidad = function() {
+    return true;
+}
+console.log(isValidad())*/
+
+//arrow function
+/*const isValidArrow = () => {return "isto é uma arrow function";}
+
+console.log(isValidArrow());*/
