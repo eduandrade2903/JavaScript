@@ -61,10 +61,18 @@
 
 /*insertBefore */
 
-const newH2 = document.createElement("h2");
-const paragrafo = container.querySelector(".paragrafo");
+// const newH2 = document.createElement("h2");
+// const paragrafo = container.querySelector(".paragrafo");
 
 
-newH2.innerText = "novo H2";
+// newH2.innerText = "novo H2";
 
-container.insertBefore(newH2, paragrafo)
+// container.insertBefore(newH2, paragrafo);
+
+/*after e before */
+const newP = document.createElement("p");
+newP.innerText = "Olá Mundo";
+// container.after("olá Eduardo");
+
+container.before(newP);
+container.after(newP);
