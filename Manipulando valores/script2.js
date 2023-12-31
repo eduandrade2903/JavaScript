@@ -51,10 +51,20 @@
 
 /*append e appendChild acrescenta elemtentos ou textos dentro de alguma classe ou elemento/id*/
 
-const container = document.querySelector(".container");
+ const container = document.querySelector(".container");
 
-container.append("<p>Olá eduardo </p>"); //não diferencia texto de elemento html
+// container.append("<p>Olá eduardo </p>"); //não diferencia texto de elemento html
 
-const newDiv = document.createElement("div");
-newDiv.innerText = "Olá mundo!"
-container.appendChild(newDiv);//nao adiciona textos
+// const newDiv = document.createElement("div");
+// newDiv.innerText = "Olá mundo!"
+// container.appendChild(newDiv);//nao adiciona textos
+
+/*insertBefore */
+
+const newH2 = document.createElement("h2");
+const paragrafo = container.querySelector(".paragrafo");
+
+
+newH2.innerText = "novo H2";
+
+container.insertBefore(newH2, paragrafo)
